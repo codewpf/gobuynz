@@ -2,17 +2,16 @@ const app = require('../app')
 const request = require('request')
 
 function openid(req, res) {
-    console.log(req.body)
     let options = generateRequestOptions(req.body.code)
-    // code2session(options).then(value => {
-    //     console.log('value')
-    //     console.log(value)
-    // }).catch(err => {
-    //     console.log('err')
-    //     console.log(err)
-    // })
-    console.log(JSON.stringify(options))
-    res.send(JSON.stringify(options));
+    code2session(options).then(value => {
+        console.log('value')
+        console.log(value)
+        res.send(JSON.stringify(value));
+    }).catch(err => {
+        console.log('err')
+        console.log(err)
+        res.send(JSON.stringify(err));
+    })
 }
 
 function generateRequestOptions(code) {
