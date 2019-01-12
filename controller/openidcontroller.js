@@ -3,6 +3,7 @@ const request = require('request')
 
 function openid(req, res) {
     let options = generateRequestOptions(req.body.code)
+    console.log(options)
     code2session(options).then(value => {
         console.log('value')
         console.log(value)
@@ -15,14 +16,9 @@ function openid(req, res) {
 }
 
 function generateRequestOptions(code) {
-    let bodyPara = {'appid':'wx6563fd902eb681a4',
-                    'secret':'4305fe6bb5c5d3fd6256122fa0425676',
-                    'js_code':code,
-                    'grant_type':'authorization_code'}
     let options = {
-        url: 'https://api.weixin.qq.com/sns/jscode2session',
-        method:'GET',
-        body: JSON.stringify(bodyPara)
+        url: 'https://api.weixin.qq.com/sns/jscode2session?appid=wx6563fd902eb681a4&secret=4305fe6bb5c5d3fd6256122fa0425676&js_code=' + code + '&grant_type=authorization_code',
+        method:'GET'
     };
     return options
 }
