@@ -2,8 +2,8 @@ const app = require('../app')
 const request = require('request')
 
 function openid(req, res) {
-    let code = JSON.parse(req.body.code)
-    let options = generateRequestOptions(code)
+    console.log(JSON.stringify(req))
+    let options = generateRequestOptions(req.body.code)
     // code2session(options).then(value => {
     //     console.log('value')
     //     console.log(value)
@@ -11,6 +11,7 @@ function openid(req, res) {
     //     console.log('err')
     //     console.log(err)
     // })
+    console.log(JSON.stringify(options))
     res.send(JSON.stringify(options));
 }
 
