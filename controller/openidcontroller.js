@@ -17,7 +17,7 @@ function openid(req, res) {
 function generateRequestOptions(code) {
     let bodyPara = {'appid':'wx6563fd902eb681a4',
                     'secret':'4305fe6bb5c5d3fd6256122fa0425676',
-                    'code':code,
+                    'js_code':code,
                     'grant_type':'authorization_code'}
     let options = {
         url: 'https://api.weixin.qq.com/sns/jscode2session',
