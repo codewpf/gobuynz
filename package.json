@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node ./bin/www",
-    "test": "./routes/test.js"
+    "test": "node ./routes/test.js"
   },
   "repository": {
     "type": "git",

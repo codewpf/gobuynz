@@ -11,6 +11,7 @@ function openid(req, res) {
         console.log('err')
         console.log(err)
     })
+    res.send('success...');
 }
 
 function generateRequestOptions(code) {
