@@ -5,13 +5,9 @@ function openid(req, res) {
     let options = generateRequestOptions(req.body.code)
     console.log(options)
     code2session(options).then(value => {
-        console.log('value')
-        console.log(value)
-        res.send(JSON.stringify(value));
+        successRes(res, value)
     }).catch(err => {
-        console.log('err')
-        console.log(err)
-        res.send(JSON.stringify(err));
+        errorRes(res,err)
     })
 }
 
@@ -38,21 +34,14 @@ function code2session(options) {
 
 // 成功回调
 function successRes(res, json) {
-    var responseObject = {
-
-    }
-    res.status(200)
     res.setHeader('content-type', 'application/json');
-    res.send(JSON.stringify(responseObject));
+    res.status(200).json(json)
 }
 // 失败回调
 function errorRes(res,json) {
-    var responseObject = {
-        
-    }
     res.status(500)
     res.setHeader('content-type', 'application/json');
-    res.send(JSON.stringify(responseObject));
+    res.send(json.errmsg);
 }
 
 
