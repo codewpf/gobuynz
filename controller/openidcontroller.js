@@ -34,8 +34,9 @@ function code2session(options) {
 
 // 成功回调
 function successRes(res, json) {
+    res.status(200)
     res.setHeader('content-type', 'application/json');
-    res.status(200).json(json)
+    res.send(json);
 }
 // 失败回调
 function errorRes(res,json) {
