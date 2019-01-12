@@ -1,13 +1,14 @@
 language: node_js
 node_js:
- - '8.11.3'
-scripts": 
- - "npm start"
+- 8.11.3
+scripts":
+- npm start
 deploy:
- provider: heroku
- api_key:
-  secure: 
+  provider: heroku
+  api_key:
+    secure: 
+    proKv4vJSk/xOA9nNjoZ6FQL6zWaPqBGo0XP58qRYPGSqsqka1wBhbc9UIMtN/ZyTVN+9l9q2yFUNYn4BHzLgBQbTgMnPv+1gOEcH9HlImaNggsa+IUpE3RYK+wZ9cu3MhdojmODnm+iggC4uN9OZ0DAGmYc0Rz2o4e/CFDqakouKxn/s/Bn31NQyIB4RdkO/rNyjyVC9SJMf6/q21d8otFSmDSnTUDDg6dWxsWPo4cnHNNFjWtSQ0HZPyAfKCyvPwpecTPGr+t4CX148gX2GhJkYr/yQW1Ne5fkzRZtqH4bnhtO4u9EVYkt+xfO3CPXVZU91elHXcufgEnf2PPMTHjJVR5gAIwJAzYGmoZ6EWnct34SbNsyYs6bDO/961a78KJlkc05ofYD+V3GerB78c4kvG+oGSAL0ajUjHXrSxMNpJZJDCUgtCA1Cws0bCxARN/Meh4imx1/7+jdFE6BvagZAhuccNliLqxN3UknRgeWsulX1b1iNCwTUzRZetBOkQcQgNWjlwa8fLsl9vccuNi5P55/08kdaVz/GkpCd1A7ApHk/5rtDZdM8WVsC3TvWAH3iifjYjTpgPNoWBKn0meZqltDiIAf5lwsTdKAzXGVWbyWdUMz6/9Ktyu5jrnIdb8mHgl8jSUtz0rBjypQTCei/QJmwfzHW9gVqNG0Oqo=
 app: gobuynz
-on:
- repo: codewpf/gobuynz
- skip_cleanup: true
+true:
+  repo: codewpf/gobuynz
+  skip_cleanup: true
