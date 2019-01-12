@@ -1,13 +1,14 @@
 language: node_js
 node_js:
-  - 8.11.3
+- 8.11.3
 scripts":
-  - "npm start"
-  - "npm test"
+- npm start
+- npm test
 deploy:
   provider: heroku
+  # token will expire 01/12/2020
   api_key:
-    secure: "kk+/6o7N32cX+SWGomRTmEbtIdDBSswN2GMgjm6jje8VK1k8yEoJvP5j77mogURQCbvsllWuJevfmipdr9Yd39SAOJxmQZuugNBN8U6IPlNL6v6mgnW9J9hgDyrrKIfzwwM5rZqUPlDWmOjwbeiiq+cxRNaPX43Ee7kgCrbC68cUYd4STSU3xtBCdzlnghQz45VWVRWNmwrTiAOzPFFR+Wskv/TkIVnJnHfO7b3NErKgnuB/CG+Y0V2GBYZwHFuD4ebefypvxnXzzraE09VQsfs/IAJ3PpFj2B67/h8FHcQWZxM4Qr5upxr10I9dQzG7TnZQqLGp6YD6tZFOL90ImplUsRHWAsuR3LqH+ZAEHhht4n7SUnCDHASUn9T72IqOcBXfibFDpYCvkA+LTGJGFe6p+bPzWEDNqqPULe56f5CbKALINkYZIi6ZJSKWe1+LboulLa1WV8Mck4upS6DrtG+6wZSxYhQQcdxAt6uxefoQHvf4ahrTAkW6/s2cx7LHO5uDanqfhMV5w9VHDl0D2bzRIXqjcVFbduEow5dAh1tjEQ4YECV3LwbrXeLMW+TT43k71H5PA9ZTW1OS/MzsNpunMbAM+z+5SwwM7muHvmclG/+Qo0y3JTZGVMcL476lFIXI0L+0LyegSCVSdrL0I/AbBwocb/H+uQF5WoLWNmo="
+    secure: YsHh03hvOVKi1TVoRsETP4+lxYe3K1hLzLZXeu75d3EIvtti3GKZpcQJ9rpmuBMjZD80HGq8hiXILjZAoNn7FfoKyD4QUS+7FARbddUrVeHLROrkYHgbNS72I2imBn0pA1x4qCzMaDCi7beQyk8hlVsACDYO+wQsjP2zEWXLwMg3qDD83zLZRYI/hoo8NGcMiVooNRxatqYUzC9IGokbNtcv0Mn+091G2lA6WTYSWgiTZ2R5NW8EkIPOY+WVGIxprrVxKzak7WyIryLWRoXVwAeo3edrshrmi6nPbI2Supht3xZGMZit0VHgyhkivagbP8lY+b2Cn17IfPzE/KPz87/nchvRQVtpNUL0L49Vs7ffk3jYZ8xNB+waIIWo4Ob4bTMxxp358Cxu6QlD8EJ6/d43eNGvaoFd+INcM35tquJOe630yMG8NwuMZ2Fm5o5hAgbzaO3a3zSt7ihGpoKD1ztrqN5MoJcOo8ytj1efcZ7KyJKpUwq74Y5DbNiOMcGCBrYlm2d2RvKexqIeVf2HjKy1fETOAaneVIaMooLgOWDFiEeFbyK4CveAun2MjWL9QlW1ZR/ogTvWNemxgEniz9Xq/gUdtcxvrDhiN50QO7C6Pj3VYyMKiFlHpozVg2Fv5B5j8bu5c4IrGaMcUHa/ivB0RhA7OsW+KsrhGNMok8I=
 app: gobuynz
 true:
   repo: codewpf/gobuynz
